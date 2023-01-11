@@ -1,0 +1,42 @@
+.header {
+    max-width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: url(../img/banners/Blue_banner.jpeg) no-repeat;
+    background-size: cover;
+    height: 800px;
+    @include e(title) {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: $thatch;
+        padding: 1.5rem 0 1rem;
+    }
+    @include e(text) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $thatch;
+        margin-bottom: 2rem;
+    }
+    @include e(scroll) {
+        color: $thatch;
+        font-size: rem(24px);
+        text-transform: uppercase;
+        position: relative;
+        padding-top: 35px;
+        display: block;
+        border: 1px #fff solid;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+        &::after {            
+        @include pseudo-els (80%, 50px, '\e903') {            
+          font-size: 34px;
+        }
+        }
+    }
+    @include e(wrapper) {
+        margin-top: 0;
+
+    }
+}

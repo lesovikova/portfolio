@@ -1,0 +1,15 @@
+html {
+    font-size: $baseFontSize;
+    font-family: $mainFont;
+    line-height: 1.5;
+    font-weight: 400;
+}
+h1, h2, h3 {
+    line-height: 1.1;
+}
+.is-hidden {
+    display: none;
+}
+a {
+    color: inherit;
+}

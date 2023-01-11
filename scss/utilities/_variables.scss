@@ -1,0 +1,15 @@
+//main colors
+
+$gore: #22274F;
+$pearl: #ABA9BC;
+$cedar: #4E181C;
+$thatch: #BFA5A4;
+
+
+//Fonts
+$google-font: "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap";
+@if variable_exists(google-font) {
+    @import url($google-font);
+  }
+$mainFont: 'Source Code Pro', monospace;
+$baseFontSize: 16px;

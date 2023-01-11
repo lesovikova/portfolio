@@ -1,0 +1,21 @@
+@mixin e($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+
+@mixin m($modifier) {
+	&--#{$modifier} {
+		@content;
+	}
+}
+
+@mixin pseudo-els($top, $left, $content:"") {
+	position: absolute;	
+	font-family: 'icomoon';
+	content: $content;
+	@content;
+	top: $top;
+	left: $left;
+	line-height: 0;
+}
