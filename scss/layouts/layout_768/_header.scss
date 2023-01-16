@@ -1,0 +1,11 @@
+@media all and (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+    .header {
+        height: 100vh;
+        @include e(wrapper) {
+            bottom: 30px;
+        }
+    }
+}

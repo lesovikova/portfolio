@@ -1,0 +1,18 @@
+@media all and (min-width: 1200px) {
+    .menu {
+      @include e(social) {
+        justify-content: space-evenly;
+      }
+        @include e(social-item) {
+          width: 20px;
+          margin: 0;
+
+      // @include m(inst) {
+      //   margin-left: auto;
+      // }
+      // @include m(git) {
+      //   margin-right: auto;
+      // }
+        }
+    }
+}

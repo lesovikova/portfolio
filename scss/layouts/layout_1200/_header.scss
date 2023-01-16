@@ -1,0 +1,16 @@
+@media all and (min-width: 1200px) {
+    .header {
+        @include e(scroll) {
+        padding-top: 27px;
+        width: 89px;
+        height: 89px;
+        font-size: 1rem;
+        border: 1px #bfa5a4 solid;
+        &::after {
+            font-size: 1rem;
+            top: 82%;
+            left: 36px;
+        }
+        }
+    }
+}

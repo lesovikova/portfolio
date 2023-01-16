@@ -1,0 +1,47 @@
+.contact {
+    @include e(wrapper) {
+        @extend %wrapper_000;
+    }
+    @include e(header) {        
+        @extend %headings;
+    }
+    @include e(text) {        
+        color: $lighterCedar;
+        position: relative;
+    }
+    @include e(email) {
+        color: $lighterGore;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    @include e(input) {
+        background-color: rgb(78 24 28 / 58%);
+        border: 2px solid $gore;
+        padding: 10px 20px 7px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        &::placeholder {
+            color: $cedar;
+            font-size: 0.9rem;
+        }
+    }
+    @include e(button) {
+        width: 100%;
+        text-transform: uppercase;
+        font-size: rem(20px);
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        padding: 10px 30px;
+        background-color: $cedar;
+        border: 2px solid $lightPearl;
+        border-radius: 10px;
+        color: $thatch;
+        margin-bottom: 30px;
+            background-image: linear-gradient(to right, #22274F 0%, #BFA5A4  51%, #4E181C  100%);
+            transition: 0.5s;
+            background-size: 200% auto;
+         
+    }
+}

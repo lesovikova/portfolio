@@ -1,0 +1,13 @@
+@media all and (min-width: 992px) {
+    .about {
+        @include e(wrapper) {
+            margin-bottom: 50px;
+        }
+        @include e(subtitle) {
+            margin-top: 50px;
+        }
+        @include e(header) {
+            margin-top: 50px;
+        }
+    }
+}

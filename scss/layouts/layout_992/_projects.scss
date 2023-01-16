@@ -1,0 +1,28 @@
+@media all and (min-width: 992px) {
+    .projects {
+        @include e(wrapper) {
+            max-width: 700px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @include e(header) {
+            width: 100%;
+            margin-top: 50px;
+            font-size: 4rem;
+        }
+        @include e(item) {
+            max-width: 300px;
+        }
+        @include e(screenshot) {
+            width: 300px;
+            height: 200px;
+            &:hover {
+                position: relative;
+                z-index: 60;
+                height: 100%;
+                cursor: pointer;
+
+            }
+        }
+    }
+}

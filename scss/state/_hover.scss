@@ -1,0 +1,56 @@
+@media all and (min-width: 992px) {
+    a:hover {
+        cursor: pointer;
+        color: $pearl;
+        text-decoration: underline;
+    }
+    .contact {
+        @include e(button) {
+            &:hover {
+                background-position: right center;
+            }
+        }
+    }
+    .header a:hover {
+        & .header__scroll {
+            color: $pearl;
+        }
+    }
+    .menu a:hover {
+        text-decoration: none;
+        color: $lighterCedar;
+    }
+    .projects a:hover {
+        & .projects__text {
+            color: $pearl;
+        }
+    }
+    .contact {
+        @include e(button) {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        @include e(input) {
+            &:hover {
+                border: 2px solid $thatch;}
+        }
+        @include e(email) {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .footer {
+        & a:hover {
+            & .footer__text-top {
+                color: $pearl;
+            }
+        }
+    }
+    .menu__social-link:hover .menu__social-item {
+        color: $gore;
+    }
+
+
+}

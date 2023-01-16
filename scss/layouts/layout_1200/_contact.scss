@@ -1,0 +1,13 @@
+@media all and (min-width: 1200px) {
+    .contact {
+        @include e(wrapper) {
+            max-width: 1050px;
+        }
+        @include e(header) {
+            font-size: 5rem;
+        }
+        @include e(email) {
+            margin-bottom: 30px;
+        }
+    }
+}

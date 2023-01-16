@@ -1,0 +1,30 @@
+.about {
+    @include e(header) {
+        @extend %headings;
+    }
+    @include e(wrapper) {
+        @extend %wrapper_000;
+        width: 85%;
+    }
+    @include e(text) {
+        color: $cedar;
+        margin-bottom: 20px;
+    }
+    @include e(subtitle) {
+        color: $gore;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    @include e(soft-wrapper) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include e(soft-skills) {
+        margin-bottom: 20px;
+        font-style: italic;
+        color: $gore;
+    }
+
+}

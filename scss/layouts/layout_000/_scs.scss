@@ -1,0 +1,28 @@
+.scs {
+    @include e(header) {
+        @extend %headings;
+    }
+    @include e(wrapper) {
+        @extend %wrapper_000;
+        width: 85%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    @include e(text) {
+        color: $cedar;
+        margin-bottom: 20px;
+    }
+    @include e(link) {
+        color: $gore;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    @include e(subtitle) {
+        color: $gore;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+}

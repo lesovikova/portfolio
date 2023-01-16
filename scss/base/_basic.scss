@@ -1,15 +1,26 @@
 html {
     font-size: $baseFontSize;
     font-family: $mainFont;
-    line-height: 1.5;
     font-weight: 400;
+    scroll-behavior: smooth
 }
 h1, h2, h3 {
     line-height: 1.1;
+}
+p {    
+    line-height: 1.5;
 }
 .is-hidden {
     display: none;
 }
 a {
     color: inherit;
+}
+h2 {
+    font-size: rem(30px);
+    font-weight: 800;
+}
+h3 {
+    font-size: rem(26px);
+    font-weight: 600;
 }

@@ -1,0 +1,37 @@
+.projects {
+    @include e(screenshot) {
+        width: 400px;
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 5px;     
+        border-bottom: 10px solid $gore;   
+    }
+    @include e(wrapper) {
+        width: 90%;
+        max-width: 420px;
+        margin: auto;
+        text-align: center;
+    }
+    @include e(header) {
+        @extend %headings;
+    }
+    @include e(item) {
+        margin: 30px auto;
+        text-align: left;
+    }
+    @include e(title) {
+        color: $lighterGore;
+        margin: 20px 0 10px;
+        padding-left: 10px;
+    }
+    @include e(text) {
+        color: $lighterCedar;
+        position: relative;
+        padding-left: 10px;
+        &::after {
+            @include pseudo-els(60%, 130px, '\e902');
+        }
+    }
+}

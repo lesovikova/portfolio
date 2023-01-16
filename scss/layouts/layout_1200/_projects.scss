@@ -1,0 +1,8 @@
+@media all and (min-width: 1200px) {
+    .projects {
+        @include e(header) {
+            margin-top: 60px;
+            font-size: 5rem;
+        }
+    }
+}

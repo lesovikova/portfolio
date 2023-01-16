@@ -1,0 +1,30 @@
+@media all and (min-width: 992px) {
+    .examples {
+        @include e(flex) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @include e(header) {
+            width: 100%;
+            margin-top: 50px;
+            font-size: 4rem;
+        }
+        @include e(item) {
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin: 30px auto;
+        }
+        @include e(screenshot) {
+            width: 300px;            
+            object-fit: cover;
+            &:hover {
+                position: relative;
+                z-index: 60;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}

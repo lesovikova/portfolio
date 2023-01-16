@@ -1,0 +1,9 @@
+.contact {
+    @include e(input) {
+        &:focus {
+            background-color: $lightThatch;
+            border: 3px solid $cedar;
+            color: $cedar;
+        }
+    }
+}

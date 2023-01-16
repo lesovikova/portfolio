@@ -1,0 +1,7 @@
+@media all and (min-width: 576px) {
+    .contact {
+        @include e(wrapper) {
+            @extend %wrapper_000;
+        }
+    }
+}

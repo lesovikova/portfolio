@@ -1,0 +1,14 @@
+@media all and (min-width: 992px) {
+    .header {
+        height: 70vh;
+        @include e(wrapper) {
+            bottom: unset;
+            top: 25vh;
+            left: 3vw;
+        }
+        @include e(title) {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+}

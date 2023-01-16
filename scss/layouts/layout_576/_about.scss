@@ -1,0 +1,10 @@
+@media all and (min-width: 576px) {
+    .about {
+        @include e(wrapper) {
+            width: 90%;
+        }
+        @include e(soft-skills) {
+        width: 45%;
+        }
+    }
+}

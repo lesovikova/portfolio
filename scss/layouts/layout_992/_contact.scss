@@ -1,0 +1,17 @@
+@media all and (min-width: 992px) {
+    .contact {
+        @include e(form) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include e(input) {
+            &[placeholder~="Name*"] {
+                min-width: 300px;
+                max-width: 49%;
+                flex-wrap: nowrap;
+
+            }
+        }
+    }
+}

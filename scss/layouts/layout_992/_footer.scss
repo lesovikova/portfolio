@@ -1,0 +1,14 @@
+@media all and (min-width: 992px) {
+    .footer {
+        height: 25vh;
+        margin-top: 10px;
+        & span {
+            height: 100%;
+        }
+        @include e(text-top) {
+            &::after {
+                left: 66%;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@media all and (min-width: 768px) {
+    .general {
+        display: flex;
+        flex-direction: row;
+        @include e(inside) {
+            width: 100%;
+        }
+    }
+    .menu {
+        &.is-hidden {
+            display: initial;
+        }
+        
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        padding: 15px;
+        
+        height: 100vh;
+        background-color: $pearl;
+        width: 25%;
+        max-width: 400px;
+        @include e(logo) {
+        margin: 30px auto;
+        text-align: center;
+    }
+    @include e(logo-text) {
+        font-size: 5rem;
+        color: $gore;
+        text-shadow: 3px 5px 4px $lighterGore;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    @include e(item) {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    @include e(link) {
+        font-size: rem(16px);
+        color: $gore;
+        font-weight: 600;
+    }
+    @include e(social) {
+        margin-top: 45px;
+        padding: 10px;
+        display: flex;
+    }
+    @include e(social-item) {
+        position: relative;
+        font-size: rem(28px);
+        color: $cedar;
+        display: block;
+        // width: 20px; 
+        margin: 0 20px;
+        @include m(inst) {
+            &::after {
+                @include pseudo-els(0, 0, '\e900');
+            }
+        }
+        @include m(git) {            
+        &::after {
+            @include pseudo-els(0, 0, '\e901');
+        }
+        }
+    }
+    }
+    
+}
