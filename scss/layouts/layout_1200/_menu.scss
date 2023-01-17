@@ -1,5 +1,6 @@
 @media all and (min-width: 1200px) {
     .menu {
+      max-width: 15%;
       @include e(social) {
         justify-content: space-evenly;
       }

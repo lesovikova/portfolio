@@ -9,10 +9,7 @@
         border-bottom: 10px solid $gore;   
     }
     @include e(wrapper) {
-        width: 90%;
-        max-width: 420px;
-        margin: auto;
-        text-align: center;
+        @extend %wrapper_000;
     }
     @include e(header) {
         @extend %headings;
