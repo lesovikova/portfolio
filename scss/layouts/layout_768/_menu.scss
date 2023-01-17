@@ -37,7 +37,7 @@
         margin-bottom: 30px;
     }
     @include e(link) {
-        font-size: rem(16px);
+        font-size: rem(20px);
         color: $gore;
         font-weight: 600;
     }
@@ -45,22 +45,25 @@
         margin-top: 45px;
         padding: 10px;
         display: flex;
+        justify-content: space-evenly;
     }
     @include e(social-item) {
         position: relative;
         font-size: rem(28px);
         color: $cedar;
         display: block;
-        // width: 20px; 
-        margin: 0 20px;
+        width: 20px; 
+        margin: 0 25px;
         @include m(inst) {
             &::after {
                 @include pseudo-els(0, 0, '\e900');
+                line-height: 1;
             }
         }
         @include m(git) {            
         &::after {
             @include pseudo-els(0, 0, '\e901');
+            line-height: 1;
         }
         }
     }

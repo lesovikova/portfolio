@@ -20,6 +20,8 @@
                 z-index: 60;
                 height: 100%;
                 cursor: pointer;
+                box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+                transition: 2s ease;
 
             }
         }

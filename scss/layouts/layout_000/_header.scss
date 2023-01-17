@@ -4,7 +4,7 @@
     text-align: center;
     background: url(../img/banners/Blue_banner.jpeg) no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 100vh;
     position: relative;
     @include e(title) {
         font-size: 3.5rem;
