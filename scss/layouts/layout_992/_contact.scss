@@ -22,5 +22,8 @@
         }
             
         }
+        @include e(email) {
+            pointer-events: initial;
+        }
     }
 }
