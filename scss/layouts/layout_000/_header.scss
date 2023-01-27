@@ -46,7 +46,11 @@
     }
 }
 .menu-btn {
-    position: relative;
+    box-shadow: 0px 1px 1px $pearl;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
     background-color: $thatch;
     padding: 5px 15px;
     border-radius: 3px;

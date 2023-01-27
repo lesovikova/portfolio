@@ -1,6 +1,7 @@
 .scs {
     @include e(header) {
         @extend %headings;
+        font-size: 2.5rem
     }
     @include e(wrapper) {
         @extend %wrapper_000;

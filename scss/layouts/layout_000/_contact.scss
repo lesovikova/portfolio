@@ -34,14 +34,41 @@
         font-weight: 600;
         letter-spacing: 1.5px;
         padding: 10px 30px;
-        background-color: $cedar;
         border: 2px solid $lightPearl;
         border-radius: 10px;
         color: $thatch;
         margin-bottom: 30px;
+        background-color: $gore;
             background-image: linear-gradient(to right, #22274F 0%, #BFA5A4  51%, #4E181C  100%);
             transition: 0.5s;
             background-size: 200% auto;
          
+    }
+    @include e(field) {
+        padding-bottom: 15px;
+        position: relative;
+    }
+    @include e(after) {
+        color: $cedar;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    & span {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
+}
+.error {
+    color: red;
+    font-size: 12px;
+    font-weight: 600;
+    & input {border-color: maroon;}
+}
+.sucsess {
+    & input {
+        border-color: initial;
     }
 }

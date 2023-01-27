@@ -1,19 +1,22 @@
-@media all and (min-width: 768px) {
-    .general {
-        display: flex;
-        flex-direction: row;
-        @include e(inside) {
-            width: 100%;
-        }
-    }
+.btn-closed .menu-btn__burger{
+    height: 5px;
+&:first-of-type {
+    top: 50%;
+    transform: rotate(45deg);
 
-    
-    .menu {
-        &.is-hidden {
-            display: initial;
-        }
-        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        position: sticky;
+}
+&:nth-of-type(2n) {
+    display: none;
+}
+&:last-of-type {
+    top: 50%;
+    transform: rotate(130deg);
+}
+}
+.menu {
+
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 50;
@@ -21,8 +24,7 @@
         
         height: 100vh;
         background-color: $pearl;
-        width: 25%;
-        max-width: 400px;
+        width: 100%;
         @include e(logo) {
         margin: 30px auto;
         text-align: center;
@@ -70,6 +72,3 @@
         }
     }
     }
-    
-}
-

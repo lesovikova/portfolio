@@ -7,3 +7,9 @@
         }
     }
 }
+.contact__button:focus {
+    border: 2px solid $lightPearl;
+    background-image: linear-gradient(to right, #22274F 0%, #BFA5A4  51%, #4E181C  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+}
