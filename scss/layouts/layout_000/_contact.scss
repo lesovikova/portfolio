@@ -20,8 +20,9 @@
         border: 2px solid $gore;
         padding: 10px 20px 7px;
         border-radius: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 7px;
         width: 100%;
+        margin-top: 10px;
         &::placeholder {
             color: $cedar;
             font-size: 0.9rem;
@@ -47,6 +48,10 @@
     @include e(field) {
         padding-bottom: 15px;
         position: relative;
+    }
+    @include e(label) {
+        color: $cedar;
+        font-size: 0.9rem;
     }
     @include e(after) {
         color: $cedar;

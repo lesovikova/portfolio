@@ -25,5 +25,11 @@
         margin-bottom: 20px;
         text-transform: uppercase;
     }
+    @include e(list-item) {
+        margin-bottom: 7px;
+    }
+    @include e(list) {
+        margin-bottom: 270px;
+    }
 
 }

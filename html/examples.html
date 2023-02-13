@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding examples</title>
+    
+    <link rel="stylesheet" href="../js/lightbox/css/lightbox.css">
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
     <div class="general">
@@ -14,10 +17,10 @@
                 <a href="../index.html"><p class="menu__logo-text">AL</p></a>
             </div>
             <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__link">About me</a></li>
+                <li class="menu__item"><a href="about.html#about_me" class="menu__link">About me</a></li>
                 <li class="menu__item"><a href="../index.html#projects" class="menu__link">My Portfolio</a></li>
-                <li class="menu__item"><a href="examples.html" class="menu__link">Coding Examples</a></li>
-                <li class="menu__item"><a href="scs.html" class="menu__link">SCS Scheme</a></li>
+                <li class="menu__item"><a href="examples.html#examples" class="menu__link active-page">Coding Examples</a></li>
+                <li class="menu__item"><a href="scs.html#scs_me" class="menu__link">SCS Scheme</a></li>
                 <li class="menu__item"><a href="../index.html#contact_me" class="menu__link">Contact me</a></li>
                 <li class="menu__item">
                     <div class="menu__social">
@@ -48,7 +51,8 @@
             
             </a>
             <div class="header__wrapper">
-                <h1 class="header__title"></h1>
+                <h2 class="header__title"></h2>
+                <h1 class="header__title--real">My name is Anna Lisovykova</h1>
                 <p class="header__text">I'm a web developer</p>
                 <a href="#examples"><p class="header__scroll">Scroll down</p></a>
             </div>
@@ -60,17 +64,23 @@
             <section class="examples" >
                 <div class="examples__flex">
                     <div class="examples__item">
-                        <img src="../img/examples/fs-mix.PNG" alt="" class="examples__screenshot">
+                        <a href="../img/examples/fs-mix.PNG"  data-lightbox=true>
+                            <img src="../img/examples/fs-mix.PNG" alt="" class="examples__screenshot">
+                        </a>
                         <h3 class="examples__title">Font size mixin</h3>
                         <p class="examples__text">A mixin to make the font size expand with the screen width but not less and not more than the specified size.</p>
                     </div>
                     <div class="examples__item">
+                        <a href="../img/examples/pseudo-mix.PNG"  data-lightbox=true>
                         <img src="../img/examples/pseudo-mix.PNG" alt="" class="examples__screenshot">
+                    </a>
                         <h3 class="examples__title">Pseudo elements mixin</h3>
                         <p class="examples__text">A mixin to make creating pseudo elements that involve special font easier.</p>
                     </div>
                     <div class="examples__item">
+                        <a href="../img/examples/uni-mix.PNG"  data-lightbox=true>
                         <img src="../img/examples/uni-mix.PNG" alt="" class="examples__screenshot">
+                    </a>
                         <h3 class="examples__title">A universal mixin</h3>
                         <p class="examples__text">A mixin for assigning a property from the specified map to the rule.</p>
                     </div>
@@ -95,7 +105,7 @@
             <footer class="footer">
                 <div class="footer__wrapper">
                     <div class="footer__to-top">
-                        <a href="" class="footer__link">
+                        <a href="#examples" class="footer__link">
                             <p class="footer__text-top">Back to top</p></a>
                     </div>
                     <div class="footer__copy">&copy;2023 by me</div>
@@ -107,6 +117,7 @@
         </div>
         
     <script src="../js/jQuery.js"></script>
-    <script src="../js/style.js"></script>
+    <script src="../js/plugin.js"></script>
+    <script src="../js/lightbox/js/lightbox.js"></script>
 </body>
 </html>

@@ -18,12 +18,6 @@
         @include e(screenshot) {
             width: 300px;            
             object-fit: cover;
-            &:hover {
-                position: relative;
-                z-index: 60;
-                width: 100%;
-                cursor: pointer;
-            }
         }
         
     }

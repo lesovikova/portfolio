@@ -25,6 +25,7 @@
         color: $gore;
     }
     @include e(deco) {
+        opacity: 80%;
         position: absolute;
         bottom: 0;
         left: 0;

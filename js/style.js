@@ -79,6 +79,18 @@ const showSuccess = (input) => {
 
 
 //The function returns true if the field passes the checks.
+const checkMessage = () => {
+    let valid = false;
+    const inputMessage = textMessage.value.trim();
+    if (!isRequired(inputMessage)) {
+        showError(textMessage, 'Message can not be blank');
+    }
+    else {        
+    showSuccess(textMessage);
+    valid = true;
+    }
+    return valid;
+}
 const checkFirstName = () => {
 
     let valid = false;
@@ -138,7 +150,8 @@ form.addEventListener('submit', function (e) {
     // validate forms
     let isFirstNameValid = checkFirstName(),
         isLastNameValid = checkLastName(),
-        isEmailValid = checkEmail();
+        isEmailValid = checkEmail(),
+        isMessageValid = checkMessage();
 
     let isFormValid = isFirstNameValid && isLastNameValid &&
         isEmailValid ;

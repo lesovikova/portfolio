@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Anna Lisovykova's portfolio">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="js/magnific/magnific-popup.css">
     <title>Anna Lisovykova | My portfolio</title>
   </head>
   <body>
@@ -22,16 +24,16 @@
         </div>
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="html/about.html" class="menu__link">About me</a>
+            <a href="html/about.html#about_me" class="menu__link">About me</a>
           </li>
           <li class="menu__item">
             <a href="#projects" class="menu__link">My Portfolio</a>
           </li>
           <li class="menu__item">
-            <a href="html/examples.html" class="menu__link">Coding Examples</a>
+            <a href="html/examples.html#examples" class="menu__link">Coding Examples</a>
           </li>
           <li class="menu__item">
-            <a href="html/scs.html" class="menu__link">SCS Scheme</a>
+            <a href="html/scs.html#scs_me" class="menu__link">SCS Scheme</a>
           </li>
           <li class="menu__item">
             <a href="#contact_me" class="menu__link">Contact me</a>
@@ -57,7 +59,8 @@
       <div class="general__inside">
         <header class="header">
           <div class="header__wrapper">
-            <h1 class="header__title"></h1>
+            <h2 class="header__title"></h2>
+            <h1 class="header__title--real">My name is Anna Lisovykova</h1>
             <p class="header__text">I'm a web developer</p>
             <a href="#projects"><p class="header__scroll">Scroll down</p></a>
           </div>
@@ -74,8 +77,17 @@
                   class="projects__screenshot"
                 />
                 <h3 class="projects__title">A shop layout</h3>
+                <p class="projects__description">This is a copy of a main page layout for the e-commerce website.</p>
+                <ul class="projects__tech-list">
+                  <li class="projects__tech-item"><h3>Technologies used:</h3></li>
+                  <li class="projects__tech-item">jQuery</li>
+                  <li class="projects__tech-item">JavaScript</li>
+                  <li class="projects__tech-item">HTML</li>
+                  <li class="projects__tech-item">CSS</li>
+                  <li class="projects__tech-item">SCSS</li>
+                </ul>
                 <a
-                  href="https://lesovikova.github.io/layout_js/index.html"
+                  href="https://anna-lisovykova.netmatters-scs.co.uk/salesshop/"
                   target="_blank"
                   ><p class="projects__text">View project</p></a
                 >
@@ -87,8 +99,17 @@
                   class="projects__screenshot"
                 />
                 <h3 class="projects__title">Netmatters site</h3>
+                <p class="projects__description">This is a copy of a main page layout for Netmatters company website.</p>
+                <ul class="projects__tech-list">
+                  <li class="projects__tech-item"><h3>Technologies used:</h3></li>
+                  <li class="projects__tech-item">jQuery</li>
+                  <li class="projects__tech-item">JavaScript</li>
+                  <li class="projects__tech-item">HTML</li>
+                  <li class="projects__tech-item">CSS</li>
+                  <li class="projects__tech-item">SCSS</li>
+                </ul>
                 <a
-                  href="https://lesovikova.github.io/reflections/"
+                  href="https://anna-lisovykova.netmatters-scs.co.uk/netmatters/"
                   target="_blank"
                   ><p class="projects__text">View project</p></a
                 >
@@ -100,8 +121,15 @@
                   class="projects__screenshot"
                 />
                 <h3 class="projects__title">A shop layout</h3>
+                <p class="projects__description">This is a copy of a main page layout for the e-commerce website.</p>
+                <ul class="projects__tech-list">
+                  <li class="projects__tech-item"><h3>Technologies used:</h3></li>
+                  <li class="projects__tech-item">HTML</li>
+                  <li class="projects__tech-item">CSS</li>
+                  <li class="projects__tech-item">SCSS</li>
+                </ul>
                 <a
-                  href="https://lesovikova.github.io/layout_flex/index.html"
+                  href="https://anna-lisovykova.netmatters-scs.co.uk/techshop"
                   target="_blank"
                   ><p class="projects__text">View project</p></a
                 >
@@ -113,8 +141,15 @@
                   class="projects__screenshot"
                 />
                 <h3 class="projects__title">My first layout</h3>
+                <p class="projects__description">This is a copy of a main page layout for the business website.</p>
+                <ul class="projects__tech-list">
+                  <li class="projects__tech-item"><h3>Technologies used:</h3></li>
+                  <li class="projects__tech-item">HTML</li>
+                  <li class="projects__tech-item">CSS</li>
+                  <li class="projects__tech-item">SCSS</li>
+                </ul>
                 <a
-                  href="https://lesovikova.github.io/figma_concept/"
+                  href="https://anna-lisovykova.netmatters-scs.co.uk/firsttry"
                   target="_blank"
                   ><p class="projects__text">View project</p></a
                 >
@@ -155,48 +190,55 @@
               <form action="index.html" class="contact__form" id="form">
                 <div class="contact__after is-hidden"></div>
                 <div class="contact__field">
+                  <label for="first_name" class="contact__label">First Name*</label>
                   <input
                     type="text"
                     class="contact__input"
-                    placeholder="First Name*"
-                    id="first_name"
+                    placeholder="John"
+                    id="first_name" name="first_name"
                   />
                   <span></span>
                 </div>
                 <div class="contact__field">
+                  <label for="last_name" class="contact__label">Last Name*</label>
                   <input
                     type="text"
                     class="contact__input"
-                    placeholder="Last Name*"
+                    placeholder="Doe"
                     id="last_name"
+                    name="last_name"
                   />
                   <span></span>
                 </div>
                 <div class="contact__field">
+                  <label for="email" class="contact__label">Email Adress*</label>
                   <input
                     type="text"
                     class="contact__input"
-                    placeholder="Email Adress*"
+                    placeholder="email@email.com"
                     id="email"
+                    name="email"
                   />
                   <span></span>
                 </div>
                 <div class="contact__field">
+                  <label for="subject" class="contact__label">Subject</label>
                   <input
                     type="text"
                     class="contact__input"
-                    placeholder="Subject"
+                    placeholder="Input the subject"
                     id="msg_subject"
+                    name="subject"
                   />
                   <span></span>
                 </div>
                 <div class="contact__field">
+                  <label for="message" class="contact__label">Message*</label>
                   <textarea
                     name="message"
                     cols="30"
                     rows="10"
                     class="contact__input"
-                    placeholder="Message"
                     id="text_message"
                   ></textarea>
                   <span></span>
@@ -210,7 +252,7 @@
         <footer class="footer">
           <div class="footer__wrapper">
             <div class="footer__to-top">
-              <a href="" class="footer__link">
+              <a href="#projects" class="footer__link">
                 <p class="footer__text-top">Back to top</p></a
               >
             </div>
@@ -222,5 +264,6 @@
     </div>
     <script src="js/jQuery.js"></script>
     <script src="js/style.js"></script>
+    <script src="js/magnific/jquery.magnific-popup.min.js"></script>
   </body>
 </html>
